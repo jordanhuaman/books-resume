@@ -12,6 +12,7 @@
   - `npm install -g typescript`
   - strictNullChecks and noImplicitAny
   - non-null assertion.
+  - noUncheckedIndexedAccess
 
 ### Throubles
 - When we have many files inside the same folder and also without a tsconfig.json. we get this error when we reppeat the same variable `Cannot redeclare block-scoped variable 'states'.ts(2451)`.
