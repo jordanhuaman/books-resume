@@ -1,0 +1,19 @@
+##  Effective TypeScript 83 Specific Ways to Improve Your TypeScript
+**Topics:**
+`@typescript` `@code` `@programming` `@book`
+
+### Chap-1
+- Item 1: Understand the Relationship Between TypeScript and JavaScript
+  - All the code that in javascript compile, in typescript always will be compile.
+  - Typescript's type system is very much not sound, it never intended to be.
+  - Typescript's type system is static(compile time) not in runtime.
+  - In runtime javascript is executed.
+- Item 2: Know Which TypeScript Options You’re Using
+  - `npm install -g typescript`
+  - strictNullChecks and noImplicitAny
+  - non-null assertion.
+
+### Throubles
+- When we have many files inside the same folder and also without a tsconfig.json. we get this error when we reppeat the same variable `Cannot redeclare block-scoped variable 'states'.ts(2451)`.
+
+  >The issue is that both files lack a module system (no export/import). In TypeScript, files without explicit modules are treated as "scripts" that share a global scope, causing the redeclaration conflict.
