@@ -14,8 +14,10 @@
   - non-null assertion.
   - noUncheckedIndexedAccess
 - Item 3: Understand That Code Generation Is Independent of Types
-
+  - typescript show the errors like a warning but it will not stop the compilation
+  - > In a nutshell, When the code doenst complie or event does, the compiler will produce an outout but with type check errors.
+  - compile () -> build -> runtime
 ### Throubles
 - When we have many files inside the same folder and also without a tsconfig.json. we get this error when we reppeat the same variable `Cannot redeclare block-scoped variable 'states'.ts(2451)`.
-
+- Happend the same when we start a tsconfig.json with a minimal configuration
   >The issue is that both files lack a module system (no export/import). In TypeScript, files without explicit modules are treated as "scripts" that share a global scope, causing the redeclaration conflict.
