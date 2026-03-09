@@ -4,6 +4,11 @@
 - inferred type: deduces it automatically
 - Compile - Build - Runtime
 - open types: on typescript we can pass more parameters that we have established. 
+- type operator: + - *, | & keyof typeof extends
+- In general, when we took about *interface* or *types*, we need to think in sub set.
+  - like: `k extends string`, k is a sub set of string -> 'à', 'abc' and so on.
+- `const data: string = "123"`-> "123" is assigned to data
+- tuple store in diferente structure that the array. `const data:[number, number]` -> `{0:number, 1: number, lenght: 2}`
 
 ### Avoid ❌
 - unsound type -> when we force something to a declared typed, and later change ->  more on **item 48**

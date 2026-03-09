@@ -1,3 +1,5 @@
+// Item 6: Use Your Editor to Interrogate and Explore the Type System
+
 /**
  * But Oddle enough, in typescript null is a 'object'.
  * @param elorId 
