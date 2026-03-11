@@ -5,6 +5,7 @@
     "strict": true,
     "noImplicitThis": true,
     "strictFunctionTypes": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": false,
+    "noEmitOnError": true
   }
 }
