@@ -1,6 +1,6 @@
 package jordan.java.domain;
 
-public enum Type {
+public enum RouterType {
     EDGE,
     CORE;
 }
