@@ -1,9 +1,9 @@
 package jordan.java.framework.adapter.output.file;
 
 import jordan.java.application.ports.output.RouterViewOutputPort;
-import jordan.java.domain.Router;
-import jordan.java.domain.RouterId;
-import jordan.java.domain.RouterType;
+import jordan.java.domain.entity.Router;
+import jordan.java.domain.vo.RouterId;
+import jordan.java.domain.vo.RouterType;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -34,7 +34,7 @@ public class RouterViewFileAdapter implements RouterViewOutputPort {
                 String[] routerEntry = line.split(";");
                 var id = routerEntry[0];
                 var type = routerEntry[1];
-                Router router = new Router(RouterType.valueOf(type), RouterId.of(id));
+                Router router = new Router(RouterType.valueOf(type), RouterId.withId(id));
                 routers.add(router);
             });
         } catch (Exception e) {

@@ -2,7 +2,8 @@ package jordan.java.application.ports.input;
 
 import jordan.java.application.ports.output.RouterViewOutputPort;
 import jordan.java.application.usecase.RouterViewUseCase;
-import jordan.java.domain.Router;
+import jordan.java.domain.entity.Router;
+import jordan.java.domain.service.RouterSearch;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -16,8 +17,8 @@ public class RouterViewInputPort implements RouterViewUseCase {
     }
 
     @Override
-    public List<Router> getRouters(Predicate<Router> list) {
+    public List<Router> getRouters(Predicate<Router> filter) {
         var routers = routerListOutputPort.fetchRouters();
-        return Router.retrieveRouter(routers, list);
+        return RouterSearch.retrieveRouter(routers, filter);
     }
 }

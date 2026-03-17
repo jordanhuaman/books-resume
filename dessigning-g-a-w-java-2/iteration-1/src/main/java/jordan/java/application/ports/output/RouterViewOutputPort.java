@@ -1,6 +1,6 @@
 package jordan.java.application.ports.output;
 
-import jordan.java.domain.Router;
+import jordan.java.domain.entity.Router;
 
 import java.util.List;
 
