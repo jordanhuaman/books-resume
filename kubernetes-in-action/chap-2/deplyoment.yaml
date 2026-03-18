@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: RepplicationController
+metadata:
+  name: kubia
+spec: 
+  replicas: 1
+  selector: 
+    app: kubia
+  template:
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+      - name: kubia
+        image: jordanhuaman/kubia
+        ports:
+        - containerPort: 8080
