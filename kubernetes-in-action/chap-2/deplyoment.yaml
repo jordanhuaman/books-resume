@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: RepplicationController
+kind: ReplicationController
 metadata:
   name: kubia
-spec: 
+spec:
   replicas: 1
-  selector: 
+  selector:
     app: kubia
   template:
     metadata:
