@@ -18,7 +18,7 @@ func parameter() {
 	}
 
 	if minusI {
-		fmt.Println("Got th∈-i parameter")
+		fmt.Println("Got the -i parameter")
 		fmt.Print("y/n: ")
 		var answer string
 		fmt.Scanln(&answer)
