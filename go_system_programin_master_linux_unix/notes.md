@@ -43,3 +43,7 @@ func test() {
 ```
 - The a2 function before this version of go, the `fmt.Print` return the last value of i, in this case will be 2, but this bug will be fix it.
 - The a3 was a solution to this, but now it is not necesary.
+
+### Pointers
+- It is not for amateur programmers.
+- We declare a parameter pointer like this `x *int` and passing like `&value`. To tell the function to return a pointer is like this `*int` `*type/class/..`, also when we recibe a pointer to transform the pointer in primitive or type structure is like this `*returnedPointer`.

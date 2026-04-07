@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 
 	// anomymous function
@@ -14,10 +12,11 @@ func main() {
 	// fmt.Println(namedMinMax(15, 6))
 	// min, max := namedMinMax(12, -1)
 	// fmt.Println(min, max)
-	a1()
-	fmt.Println()
-	a2()
-	fmt.Println()
-	a3()
-	fmt.Println()
+	// a1()
+	// fmt.Println()
+	// a2()
+	// fmt.Println()
+	// a3()
+	// fmt.Println()
+	run()
 }
