@@ -47,3 +47,14 @@ func test() {
 ### Pointers
 - It is not for amateur programmers.
 - We declare a parameter pointer like this `x *int` and passing like `&value`. To tell the function to return a pointer is like this `*int` `*type/class/..`, also when we recibe a pointer to transform the pointer in primitive or type structure is like this `*returnedPointer`.
+
+### Data structure
+### ARray
+- Access all the elements.
+- Direct access to a specific element by the index o key.
+- Insert elements
+- Deleting elements
+- Arrays are not dynamic. When we pass an array inside a function, in fact we pass a copy, and the changes that the function make, it will be lost.
+
+### Slices
+- All the problems in arrays, Slices will solve.
