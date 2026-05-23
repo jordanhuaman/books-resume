@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-node-label
+  labels:
+    env: test
+spec:
+  containers:
+  - name: kubia
+    image: jordanhuaman/kubia
+    ports:
+    - containerPort: 8080
+  nodeSelector:
+    env: [test, production]
+    gpu: "true"
