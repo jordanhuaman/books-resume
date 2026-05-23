@@ -4,6 +4,15 @@ metadata:
   name: kubia-node-label
   labels:
     env: test
+  annotations:
+    build-date: "2026-05-23"
+    build-version: "1.0.0"
+    build-user: "jordanhuaman"
+    build-email: "jordanhuaman@gmail.com"
+    build-url: "https://github.com/jordanhuaman/kubia"
+    build-tag: "latest"
+    build-branch: "main"
+    build-commit: "1234567890"
 spec:
   containers:
   - name: kubia
@@ -11,5 +20,5 @@ spec:
     ports:
     - containerPort: 8080
   nodeSelector:
-    env: [test, production]
+    env: test
     gpu: "true"
