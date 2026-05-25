@@ -21,3 +21,5 @@
 - `kubectl label pod kubia-manual-v2 creation_method=manual2 --overwrite`
 - `kubectl get pods -l 'env=test'` 
 - `kubectl get pods -l 'env in (production, staging), version notin (2.0), app'`
+- `kubectl create -f {file-what-specify-namespace}`
+- `kubectl create namespace custom-namespace`
