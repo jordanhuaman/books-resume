@@ -1,10 +1,15 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: kubia
+  name: kubia2
 spec: 
   replicas: 3
   selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+          - kubia
     matchLabels:
       app: kubia
   template: 
